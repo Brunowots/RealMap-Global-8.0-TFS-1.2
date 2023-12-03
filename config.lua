@@ -66,7 +66,7 @@ timeBetweenExActions = 800
 
 -- Map
 -- NOTE: set mapName WITHOUT .otbm at the end
-mapName = "global"
+mapName = "global88"
 mapAuthor = "Bruno"
 
 -- MySQL
