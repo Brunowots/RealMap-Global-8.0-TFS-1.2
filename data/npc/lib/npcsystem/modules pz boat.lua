@@ -279,17 +279,16 @@ if Modules == nil then
 	end
 
 	-- Set custom greeting messages
-    function FocusModule:addGreetMessage(message)
+	function FocusModule:addGreetMessage(message)
 		if not self.greetWords then
 			self.greetWords = {}
 		end
- 
- 
+
 		if type(message) == 'string' then
-			table.insert(self.greetWords, message)
+			self.greetWords[#self.greetWords + 1] = message
 		else
 			for i = 1, #message do
-				table.insert(self.greetWords, message[i])
+				self.greetWords[#self.greetWords + 1] = message[i]
 			end
 		end
 	end
