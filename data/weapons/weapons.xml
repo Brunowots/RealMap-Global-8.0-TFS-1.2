@@ -267,7 +267,7 @@
 	<distance id="2545"  swing="true" action="removecount" script="poison_arrow.lua" />
 	<distance id="2546" swing="true" action="removecount" script="burst_arrow.lua" />
 	<distance id="2547" swing="true" action="removecount" unproperly="1" level="55" /> <!-- Power Bolt -->
-	<distance id="3965" breakchance="6" swing="true" unproperly="1" level="20" /> <!-- Hunting Spear -->
+	<distance id="3965" breakchance="4" swing="true" unproperly="1" level="20" /> <!-- Hunting Spear -->
 	<distance id="6529" action="removecount" swing="true"  unproperly="1" level="110" /> <!-- Infernal Bolt -->
 	<distance id="7363" action="removecount" swing="true"  unproperly="1" level="30" /> <!-- Piercing Bolt -->
 	<distance id="7364" action="removecount" swing="true"  unproperly="1" level="20" /> <!-- Sniper Arrow -->
@@ -275,5 +275,5 @@
 	<distance id="7366" breakchance="9" swing="true" script="viper_star.lua" />
 	<distance id="7367" breakchance="2" swing="true"  unproperly="1" level="42" />	<!-- Enchanted Spear -->
 	<distance id="7368" breakchance="33" swing="true" unproperly="1" level="80" />	<!-- Assassin Star -->
-	<distance id="7378" breakchance="3" swing="true" unproperly="1" level="25" />	<!-- Royal Spear -->
+	<distance id="7378" breakchance="4" swing="true" unproperly="1" level="25" />	<!-- Royal Spear -->
 </weapons>
