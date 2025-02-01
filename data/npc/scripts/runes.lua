@@ -77,17 +77,6 @@ shopModule:addBuyableItem({'quagmire rod', 'quagmire'}, 2181, 2000, 'quagmire ro
 shopModule:addBuyableItem({'tempest rod', 'tempest'}, 2183, 3000, 'tempest rod')
 
 
-shopModule:addSellableItem({'wand of vortex', 'vortex'}, 2190, 100, 'wand of vortex')
-shopModule:addSellableItem({'wand of dragonbreath', 'dragonbreath'}, 2191, 200, 'wand of dragonbreath')
-shopModule:addSellableItem({'wand of plague', 'plague'}, 2188, 1000, 'wand of plague')
-shopModule:addSellableItem({'wand of cosmic energy', 'cosmic energy'}, 2189, 2000, 'wand of cosmic energy')
-shopModule:addSellableItem({'wand of inferno', 'inferno'}, 2187, 3000, 'wand of inferno')
-
-shopModule:addSellableItem({'snakebite rod', 'snakebite'}, 2182, 100, 'snakebite rod')
-shopModule:addSellableItem({'moonlight rod', 'moonlight'}, 2186, 200, 'moonlight rod')
-shopModule:addSellableItem({'volcanic rod', 'volcanic'}, 2185, 1000, 'volcanic rod')
-shopModule:addSellableItem({'quagmire rod', 'quagmire'}, 2181, 2000, 'quagmire rod')
-shopModule:addSellableItem({'tempest rod', 'tempest'}, 2183, 3000, 'tempest rod')
 
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())
