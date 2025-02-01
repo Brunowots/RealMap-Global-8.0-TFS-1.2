@@ -22,8 +22,8 @@ keywordHandler:addKeyword({'rods'}, StdModule.say, {npcHandler = npcHandler, onl
 shopModule:addBuyableItem({'spellbook'}, 2175, 150, 'spellbook')
 shopModule:addBuyableItem({'magic lightwand'}, 2163, 400, 'magic lightwand')
 
-shopModule:addBuyableItem({'mana fluid', 'manafluid'}, 2006, 50, 7, 'mana fluid')
-shopModule:addBuyableItem({'life fluid', 'lifefluid'}, 2006, 50, 2, 'life fluid')
+shopModule:addBuyableItem({'mana fluid', 'manafluid'}, 2006, 100, 7, 'mana fluid')
+shopModule:addBuyableItem({'life fluid', 'lifefluid'}, 2006, 60, 2, 'life fluid')
 
 shopModule:addBuyableItemContainer({'bp mf'}, 2001, 2006, 1000, 7, 'backpack of mana fluids')
 shopModule:addBuyableItemContainer({'bp lf'}, 2000, 2006, 1000, 2, 'backpack of life fluids')
