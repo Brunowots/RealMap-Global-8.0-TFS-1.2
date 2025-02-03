@@ -21,8 +21,7 @@ end
 addTravelKeyword('thais', 130, Position(32310, 32210, 6))
 addTravelKeyword('carlin', 80, Position(32387, 31820, 6))
 addTravelKeyword('edron', 70, Position(33175, 31764, 6))
-addTravelKeyword('venore', 90, Position(32954, 32022, 6), 
-function(player) return player:getStorageValue(Storage.SearoutesAroundYalahar.AbDendriel) ~= 1 and player:getStorageValue(Storage.SearoutesAroundYalahar.TownsCounter) < 5 end)
+addTravelKeyword('venore', 90, Position(32954, 32022, 6))
 addTravelKeyword('port hope', 160, Position(32527, 32784, 6))
 
 -- Kick
