@@ -29,8 +29,6 @@ addTravelKeyword('edron', 40, Position(33173, 31764, 6))
 addTravelKeyword('port hope', 160, Position(32527, 32784, 6))
 addTravelKeyword('svargrond', 150, Position(32341, 31108, 6))
 addTravelKeyword('liberty bay', 180, Position(32285, 32892, 6))
-addTravelKeyword('', 180, Position(32285, 32892, 6), 
-function(player) return player:getStorageValue(Storage.SearoutesAroundYalahar.Venore) ~= 1 and player:getStorageValue(Storage.SearoutesAroundYalahar.TownsCounter) < 5 end)
 addTravelKeyword('ankrahmun', 150, Position(33092, 32883, 6))
 
 
