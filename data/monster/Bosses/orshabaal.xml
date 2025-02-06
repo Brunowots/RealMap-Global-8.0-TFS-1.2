@@ -121,7 +121,7 @@
 		<item id="2421" countmax="1" chance="13500" /> <!-- thunder hammer -->
 		<item id="2377" countmax="1" chance="20000" /> <!-- two handed sword -->
 		<item id="3955" countmax="1" chance="100" /> <!-- voodoo doll -->
-		<item id="2185" countmax="1" chance="3500" /> <!-- necrotic rod -->
+		<item id="2185" countmax="1" chance="3500" /> <!-- volcanic rod -->
 		<item id="2143" countmax="15" chance="12500" /> <!-- white pearl -->
 	</loot>
 </monster>
