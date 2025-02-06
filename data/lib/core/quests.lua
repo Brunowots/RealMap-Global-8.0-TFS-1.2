@@ -1265,7 +1265,7 @@ if not Quests then
 					name = "Mage &amp; Summoner Outfit Quest (Wand)", storageid = Storage.OutfitQuest.MageSummoner.AddonWand, startvalue = 1, endvalue = 7,
 					states = {
 						[1] = "You found Angelina in a Prison. She told you a secret: Lynda in Thais can create a blessed wand. Greet her from Angelina, maybe she will aid you.",
-						[2] = "Lynda send you to bring her a sample of all five wands and five rods (Snakebite, Moonlight, Necrotic, Terra, tempest, Vortex, Dragonbreath, Decay, Cosmic Energy and Inferno)",
+						[2] = "Lynda send you to bring her a sample of all five wands and five rods (Snakebite, Moonlight, Necrotic, Terra, tempest, Vortex, Dragonbreath, Plague, Cosmic Energy and Inferno)",
 						[3] = "Bring Lynda 10 ounces of magic sulphur",
 						[4] = "Bring Lynda the Necromancer's soul stone",
 						[5] = "Bring Lynda 20 ankhs now to complete the ritual.",
