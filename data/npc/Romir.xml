@@ -5,7 +5,7 @@
 	<parameters>
 		<parameter key="message_greet" value="Hello |PLAYERNAME|. Im selling a lot of potions but also buy a vial ask me for a {trade}." />
 		<parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable" value="blank rune,2260,10;life fluid,2006,50,2,life fluid;mana fluid,2006,50,7,mana fluid;spellbook,2217,150;quagmire rod,2181,10000;moonlight rod,2186,1000;volcanic rod,2185,5000;snakebite rod,2182,500;tempest rod,2183,15000;wand of cosmic energy,2189,10000;wand of plague,2188,5000;wand of dragonbreath,2191,1000;wand of vortex,2190,500;wand of inferno,2187,15000" />
+		<parameter key="shop_buyable" value="blank rune,2260,10;life fluid,2006,60,2,life fluid;mana fluid,2006,55,7,mana fluid;spellbook,2217,150;quagmire rod,2181,10000;moonlight rod,2186,1000;volcanic rod,2185,5000;snakebite rod,2182,500;tempest rod,2183,15000;wand of cosmic energy,2189,10000;wand of plague,2188,5000;wand of dragonbreath,2191,1000;wand of vortex,2190,500;wand of inferno,2187,15000" />
 		<parameter key="shop_sellable" value="vial,2006,5;" />
 	</parameters>
 </npc>
