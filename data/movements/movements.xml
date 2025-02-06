@@ -1691,7 +1691,7 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="2191" slot="hand" function="onDeEquipItem" />
 
-	<movevent event="Equip" itemid="2188" slot="hand" level="19" function="onEquipItem"> <!-- Wand of Decay -->
+	<movevent event="Equip" itemid="2188" slot="hand" level="19" function="onEquipItem"> <!-- Wand of Plague -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
 	</movevent>
@@ -1802,7 +1802,7 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="2186" slot="hand" function="onDeEquipItem" />
 
-	<movevent event="Equip" itemid="2185" slot="hand" level="19" function="onEquipItem"> <!-- Necrotic Rod -->
+	<movevent event="Equip" itemid="2185" slot="hand" level="19" function="onEquipItem"> <!-- Volcanic Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
 	</movevent>
@@ -1814,7 +1814,7 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="8911" slot="hand" function="onDeEquipItem" />
 
-	<movevent event="Equip" itemid="2181" slot="hand" level="26" function="onEquipItem"> <!-- Terra Rod -->
+	<movevent event="Equip" itemid="2181" slot="hand" level="26" function="onEquipItem"> <!-- Quagmire Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
 	</movevent>
