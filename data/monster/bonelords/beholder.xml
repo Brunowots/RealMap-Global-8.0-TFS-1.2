@@ -63,7 +63,7 @@
 		<item id="2509" chance="4001"/><!-- steel shield -->
 		<item id="2377" chance="3840"/><!-- two handed sword -->
 		<item id="5898" chance="940"/><!-- beholder eye -->
-		<item id="2181" chance="570"/><!-- terra rod -->
+		<item id="2181" chance="570"/><!-- Quagmire Rod -->
 		<item id="2518" chance="80"/><!-- beholder shield -->
 	</loot>
 </monster>
