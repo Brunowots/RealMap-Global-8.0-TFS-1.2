@@ -43,4 +43,7 @@ keywordHandler:addKeyword({'headgear'}, StdModule.say, {npcHandler = npcHandler,
 keywordHandler:addKeyword({'shoes'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = "<sigh> We sell leather boots and sandals."})
 keywordHandler:addKeyword({'trouser'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = "We offer leather legs and studded legs."})
 
+npcHandler:setMessage(MESSAGE_GREET, 'Just great, another ... \'customer\'. Hello, |PLAYERNAME|. If you want to trade, let\'s get it over with.')
+npcHandler:setMessage(MESSAGE_FAREWELL, 'Yeah, get lost.')
+
 npcHandler:addModule(FocusModule:new())

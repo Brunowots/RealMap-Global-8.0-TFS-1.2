@@ -15,10 +15,9 @@ smage        = 22006
   
 ssummoner    = 22621   
 
-newaddon    = 'Ah, right! The barbarian axe! Here you go.'
 noitems        = 'You do not have all the required items.'
 noitems2    = 'You do not have all the required items or you do not have the outfit, which by the way, is a requirement for this addon.'
-already        = 'It seems you already have this addon, don\'t you try to mock me son!'
+already        = 'It seems you already have this addon, don\'t you try to mock me!'
 
 function SummonerSecond(cid, message, keywords, parameters, node)
 
@@ -27,17 +26,20 @@ function SummonerSecond(cid, message, keywords, parameters, node)
     end
 
     if isPremium(cid) then
-    addon = getPlayerStorageValue(cid,ssummoner)
-    if addon == -1 then
+    addonMale = getPlayerStorageValue(cid,ssummoner)
+	addonFemale = getPlayerStorageValue(cid,smage)
+    if addonMale == -1 and getPlayerSex(cid) == 1 or addonFemale == -1 and getPlayerSex(cid) == 0 then
        if getPlayerItemCount(cid,5894) >= 70 and getPlayerItemCount(cid,5911) >= 20 and getPlayerItemCount(cid,5883) >= 40 and getPlayerItemCount(cid,5922) >= 35 and getPlayerItemCount(cid,5886) >= 10 and getPlayerItemCount(cid,5881) >= 60 and getPlayerItemCount(cid,5882) >= 40 and getPlayerItemCount(cid,5904) >= 15 and getPlayerItemCount(cid,5905) >= 30 then
         if doPlayerRemoveItem(cid,5894,70) and doPlayerRemoveItem(cid,5911,20) and doPlayerRemoveItem(cid,5883,40) and doPlayerRemoveItem(cid,5922,35) and doPlayerRemoveItem(cid,5886,10) and doPlayerRemoveItem(cid,5881,60) and doPlayerRemoveItem(cid,5882,40) and doPlayerRemoveItem(cid,5904,15) and doPlayerRemoveItem(cid,5905,30) then
-            npcHandler:say('Ah, right! The summoner cloak! Here you go.')
             doSendMagicEffect(getCreaturePosition(cid), 13)
-			setPlayerStorageValue(cid,ssummoner,1)
 			if getPlayerSex(cid) == 1 then
             doPlayerAddOutfit(cid, 133, 2)
+			setPlayerStorageValue(cid,ssummoner,1)
+			selfSay('Ah, right! The summoner cloak! Here you go.')
 			elseif getPlayerSex(cid) == 0 then
-            doPlayerAddOutfit(cid, 141, 2)	
+            doPlayerAddOutfit(cid, 138, 2)	
+			setPlayerStorageValue(cid,smage,1)
+			selfSay('Ah, right! The mage tiara! Here you go.')
         end    
         end
         else

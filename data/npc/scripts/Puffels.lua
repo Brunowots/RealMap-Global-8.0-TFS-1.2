@@ -26,4 +26,7 @@ keywordHandler:addKeyword({'beast'}, StdModule.say, {npcHandler = npcHandler, on
 keywordHandler:addKeyword({'spellbook'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = "Ask a shop owner for that."})
 keywordHandler:addKeyword({'spell'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = "I have 'Magic Rope', 'Levitate', 'Haste', 'Berserk' 'Whirlwind Throw', 'Force Strike', 'Energy Strike', and 'Flame Strike'."})
 
+
+
+
 npcHandler:addModule(FocusModule:new())

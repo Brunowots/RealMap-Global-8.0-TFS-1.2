@@ -48,14 +48,14 @@ local function creatureSayCallback(cid, type, msg)
 			player:setStorageValue(Storage.TheIceIslands.Mission01, 1) -- Questlog The Ice Islands Quest, Befriending the Musher
 			npcHandler.topic[cid] = 0
 		elseif npcHandler.topic[cid] == 2 then
-			--if player:getStorageValue(Storage.TheIceIslands.Questline) >= 3 then
-			player:teleportTo(Position(32325, 31049, 7))
-			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-			npcHandler.topic[cid] = 0
-			--else
-			--npcHandler:say("Sorry, first time you have to do a mission for me.", cid)
-			--npcHandler.topic[cid] = 0
-			--end
+			if player:getStorageValue(Storage.TheIceIslands.Questline) >= 3 then
+				player:teleportTo(Position(32325, 31049, 7))
+				player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
+				npcHandler.topic[cid] = 0
+			else
+				npcHandler:say("Sorry, first time you have to do a mission for me.", cid)
+				npcHandler.topic[cid] = 0
+			end
 		end
 	end
 	return true

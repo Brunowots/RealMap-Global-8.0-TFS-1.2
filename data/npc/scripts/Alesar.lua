@@ -89,6 +89,30 @@ local function onTradeRequest(cid)
 	return true
 end
 
+keywordHandler:addKeyword({'efreet'}, StdModule.say, {npcHandler = npcHandler, text = "The efreet are those djinns who never fell for Daraman's insidious propaganda. I wish I would have been as smart from the start. ... But errors can be corrected!"})
+keywordHandler:addKeyword({'marid'}, StdModule.say, {npcHandler = npcHandler, text = "Those among my brothers and sisters who still do not see the truth call themselves the Marid. I used to be one of them, but I left them when the truth dawned upon me. ... Now I follow Malor, although I would never fight against my kind."})
+keywordHandler:addKeyword({'Malor'}, StdModule.say, {npcHandler = npcHandler, text = "Malor is overambitious and unnecessarily cruel, but he is the only djinn who could unite our race, so I follow him. ... The truth is I despise him, but that is of no importance as long as you humans will be exterminated."})
+keywordHandler:addKeyword({'humans'}, StdModule.say, {npcHandler = npcHandler, text = "I used to have  illusions about you humans. I thought humans were good, noble creatures. ... I thought djinns and humans shared a destiny, and that we could live side by side peacefully. ... But now I have learnt my lesson. I have had the privilege to look deep into the human mind, much deeper than most of my brothers. ... And guess what! I did not like what I've seen. You are nothing but a race of cruel, perfidious bloodsuckers who hide their wickedness behind a thin layer of civilisation and so-called humanity. ... Your race is a blemish on the face of Tibia. The sooner it is gone the better!"})
+keywordHandler:addKeyword({'djinns'}, StdModule.say, {npcHandler = npcHandler, text = "One day we will teach your race a lesson it will never forget."})
+keywordHandler:addKeyword({'tibia'}, StdModule.say, {npcHandler = npcHandler, text = "One day we djinns will rid this world of evil."})
+keywordHandler:addKeyword({'haroun'}, StdModule.say, {npcHandler = npcHandler, text = "Haroun? What? You know ... where do you know that name from? Did he send you?"})
+keywordHandler:addKeyword({'alesar'}, StdModule.say, {npcHandler = npcHandler, text = "That's my name. So what!"})
+keywordHandler:addKeyword({'name'}, StdModule.say, {npcHandler = npcHandler, text = "My name is none of your business."})
+keywordHandler:addKeyword({'gabel'}, StdModule.say, {npcHandler = npcHandler, text = "Gabel is a kind-hearted, honest djinn. I would hate to see him die just because he believes in Daraman's lies. ... After all, I believed them myself."})
+keywordHandler:addKeyword({'daraman'}, StdModule.say, {npcHandler = npcHandler, text = "Don't you dare mention Daraman in my presence, human. I am through with his insidious lies and through with your accursed race!"})
+keywordHandler:addKeyword({'fa\'hradin'}, StdModule.say, {npcHandler = npcHandler, text = "Fa'hradin, that old cynic is way too smart to believe in Daraman's lies. He should reconsider his loyalties."})
+keywordHandler:addKeyword({'bo\'ques'}, StdModule.say, {npcHandler = npcHandler, text = "I miss Bo'ques' cooking, but not his pompous airs and graces."})
+keywordHandler:addKeyword({'baa\'leal'}, StdModule.say, {npcHandler = npcHandler, text = "Baa'leal is Malor's lieutenant. Unflinchingly loyal, but not quite as clever as he thinks he is."})
+keywordHandler:addKeyword({'djema'}, StdModule.say, {npcHandler = npcHandler, text = "Djema? Well - I suppose she is the only human I still like. But she has been brought up by djinns. Who knows - perhaps humans can learn."})
+keywordHandler:addKeyword({'melchior'}, StdModule.say, {npcHandler = npcHandler, text = "I remember him. He was a greedy, double-dealing hyena. As far as I know his bleached bones are now lying somewhere in the Kha'labal."})
+keywordHandler:addKeyword({'ankrahmun'}, StdModule.say, {npcHandler = npcHandler, text = "I don't care about human cities. If I had it my way, they would all be burnt down today."})
+keywordHandler:addKeyword({'darashia'}, StdModule.say, {npcHandler = npcHandler, text = "I don't care about human cities. If I had it my way, they would all be burnt down today."})
+keywordHandler:addKeyword({'pharaoh'}, StdModule.say, {npcHandler = npcHandler, text = "The Pharaoh in Ankrahmun is a dangerous fool. Just a typical human, in other words."})
+keywordHandler:addKeyword({'mal\'ouquah'}, StdModule.say, {npcHandler = npcHandler, text = "I don't like this place. But then it does not really matter where I am. I have a forge and I don't see any humans. That's all I need. ... Of course, your presence doesn't help me to feel myself at home here."})
+keywordHandler:addKeyword({'ashta\'daramai'}, StdModule.say, {npcHandler = npcHandler, text = "I used to live in Ashta'daramai. That was before I realised the extent of my blindness."})
+
+
+
 npcHandler:setMessage(MESSAGE_GREET, 'What do you want from me, |PLAYERNAME|?')
 npcHandler:setMessage(MESSAGE_FAREWELL, 'Finally.')
 npcHandler:setMessage(MESSAGE_WALKAWAY, 'Finally.')

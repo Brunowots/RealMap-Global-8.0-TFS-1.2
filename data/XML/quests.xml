@@ -417,7 +417,7 @@
      </mission>
      <mission name="Mage &amp; Summoner Outfit Quest (Wand)" storageid="12061" startvalue="1" endvalue="7">
          <missionstate id="1" description="You found Angelina in a Prison. She told you a secret: Lynda in Thais can create a blessed wand. Greet her from Angelina, maybe she will aid you."/>
-         <missionstate id="2" description="Lynda send you to bring her a sample of all five wands and five rods (Snakebite, Moonlight, Necrotic, Terra, Hailstorm, Vortex, Dragonbreath, Decay, Cosmic Energy and Inferno)"/>
+         <missionstate id="2" description="Lynda send you to bring her a sample of all five wands and five rods (Snakebite, Moonlight, Necrotic, Quagmire, Tempest, Vortex, Dragonbreath, Plague, Cosmic Energy and Inferno)"/>
          <missionstate id="3" description="Bring Lynda 10 ounces of magic sulphur"/>
          <missionstate id="4" description="Bring Lynda the Necromancer's soul stone"/>
          <missionstate id="5" description="Bring Lynda 20 ankhs now to complete the ritual."/>

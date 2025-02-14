@@ -468,7 +468,7 @@ function onUsePick(player, item, fromPosition, target, toPosition, isHotkey)
 
 	elseif targetId == 1304 then
 	--The Pits of Inferno Quest
-		if target.uid == 1022 then
+		if target.uid == 31086 then
 			for i = 1, #lava do
 				Game.createItem(5815, 1, lava[i])
 			end

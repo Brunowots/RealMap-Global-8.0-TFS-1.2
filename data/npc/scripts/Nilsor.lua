@@ -40,7 +40,7 @@ local function creatureSayCallback(cid, type, msg)
 			player:setStorageValue(Storage.TheIceIslands.Mission07, 1) -- Questlog The Ice Islands Quest, The Secret of Helheim
 			npcHandler.topic[cid] = 0
 		elseif player:getStorageValue(Storage.TheIceIslands.Questline) > 20 and player:getStorageValue(Storage.TheIceIslands.Questline) < 28 then
-			npcHandler:say("What for ingredient do you have? {Sulphur}", cid)
+			npcHandler:say("What for ingredient do you have? {cactus}", cid)
 			npcHandler.topic[cid] = 0
 		else
 			npcHandler:say("I have now no mission for you.", cid)

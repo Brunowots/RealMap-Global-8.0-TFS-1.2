@@ -18,11 +18,13 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler.topic[cid] = 1
 		end
 	elseif msgcontains(msg, "test") then
-		npcHandler:say({
-			"All of our juveniles have to take the barbarian test to become a true member of our community. Foreigners who manage to master the test are granted the title of an honorary barbarian and the respect of our people ...",
-			"Are you willing to take the barbarian test?"
-		}, cid)
-		npcHandler.topic[cid] = 2
+		if npcHandler.topic[cid] == 1 then
+			npcHandler:say({
+				"All of our juveniles have to take the barbarian test to become a true member of our community. Foreigners who manage to master the test are granted the title of an honorary barbarian and the respect of our people ...",
+				"Are you willing to take the barbarian test?"
+			}, cid)
+			npcHandler.topic[cid] = 2
+		end
 	elseif msgcontains(msg, "mead") then
 		if player:getStorageValue(Storage.BarbarianTest.Questline) == 1 then
 			npcHandler:say("Do you have some honey with you?", cid)

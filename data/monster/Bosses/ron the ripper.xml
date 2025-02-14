@@ -29,6 +29,6 @@
 		<item id="2387" chance="1500" /> <!-- double axe -->
 		<item id="2463" chance="4000" /> <!-- plate armor -->
 		<item id="2379" chance="8500" /> <!-- dagger -->
-		<item id="2320" countmax="2" chance="100000" /> <!-- skull -->
+		<item id="2229" countmax="2" chance="100000" /> <!-- skull -->
 	</loot>
 </monster>
