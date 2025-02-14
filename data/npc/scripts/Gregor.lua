@@ -10,6 +10,11 @@ function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) 
 function onThink() npcHandler:onThink() end
 -- OTServ event handling functions end
 
+
+local voices = { {text = 'Gather around me, young knights! I\'m going to teach you some spells!'} }
+npcHandler:addModule(VoiceModule:new(voices))
+
+
 local node1 = keywordHandler:addKeyword({'great light'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Would you like to learn great light for 500 gp?'})
 node1:addChildKeyword({'yes'}, StdModule.learnSpell, {npcHandler = npcHandler, premium = false, spellName = 'great light',vocation = 4, price = 500, level = 1})
 node1:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Cant you handle the power of the spell?', reset = true})
@@ -18,8 +23,8 @@ local node1 = keywordHandler:addKeyword({'light healing'}, StdModule.say, {npcHa
 node1:addChildKeyword({'yes'}, StdModule.learnSpell, {npcHandler = npcHandler, premium = false, spellName = 'light healing',vocation = 4, price = 170, level = 1})
 node1:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Cant you handle the power of the spell?', reset = true})
 
-local node1 = keywordHandler:addKeyword({'light'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Would you like to learn light for free?'})
-node1:addChildKeyword({'yes'}, StdModule.learnSpell, {npcHandler = npcHandler, premium = false, spellName = 'light',vocation = 4, price = 0, level = 1})
+local node1 = keywordHandler:addKeyword({'light'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Would you like to learn light for 100gp?'})
+node1:addChildKeyword({'yes'}, StdModule.learnSpell, {npcHandler = npcHandler, premium = false, spellName = 'light',vocation = 4, price = 100, level = 1})
 node1:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Cant you handle the power of the spell?', reset = true})
 
 local node1 = keywordHandler:addKeyword({'find person'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Would you like to learn find person for 80 gold coins?'})
@@ -29,6 +34,7 @@ node1:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, onlyFocus
 local node1 = keywordHandler:addKeyword({'antidote'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Would you like to learn antidote for 150 gold coins?'})
 node1:addChildKeyword({'yes'}, StdModule.learnSpell, {npcHandler = npcHandler, premium = false, spellName = 'antidote',vocation = 4, price = 150, level = 1})
 node1:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Cant you handle the power of the spell?', reset = true})
+
 
 -- Makes sure the npc reacts when you say hi, bye etc.
 npcHandler:addModule(FocusModule:new())
@@ -51,13 +57,13 @@ function KnightSecond(cid, message, keywords, parameters, node)
     end
 
     if isPremium(cid) then
-    addon = getPlayerStorageValue(cid,sKnight)
+	addon = getPlayerStorageValue(cid,sKnight)
     if addon == -1 then
         if getPlayerItemCount(cid,5893) >= 100 and getPlayerItemCount(cid,5885) >= 1 and 
-getPlayerItemCount(cid,5892) >= 1 and getPlayerItemCount(cid,5924) >= 1 then
+			getPlayerItemCount(cid,5892) >= 1 and getPlayerItemCount(cid,5924) >= 1 then
         if doPlayerRemoveItem(cid,5893,100) and doPlayerRemoveItem(cid,5885,1) and 
-getPlayerItemCount(cid,5892,1) and 
-doPlayerRemoveItem(cid,5924,1) then
+			getPlayerItemCount(cid,5892,1) and 
+			doPlayerRemoveItem(cid,5924,1) then
             npcHandler:say('Ah, right! The knight addon! Here you go.')
              
             doSendMagicEffect(getCreaturePosition(cid), 13)
@@ -84,7 +90,7 @@ node1 = keywordHandler:addKeyword({'addon'}, StdModule.say, {npcHandler = npcHan
     node1:addChildKeyword({'yes'}, KnightSecond, {})
     node1:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Alright then. Come back when you got all neccessary items.', reset = true})
 
-node1 = keywordHandler:addKeyword({'spells'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'I sell knight spells (great light), (light healing), (light, find person), and (antidote)!'})
+node1 = keywordHandler:addKeyword({'spells'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'I sell knight spells (great light), (light healing), (light), (find person), and (antidote)!'})
     node1:addChildKeyword({'yes'}, KnightSecond, {})
     node1:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'Alright then. Come back when you got all money.', reset = true})
 	

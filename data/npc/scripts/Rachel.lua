@@ -13,7 +13,7 @@ function onPlayerCloseChannel(cid)			npcHandler:onPlayerCloseChannel(cid)		end
 local shopModule = ShopModule:new()
 npcHandler:addModule(shopModule)
 
-keywordHandler:addKeyword({'runes'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'I sell: animate dead, blank rune, desintegrate, energy bomb, fireball, holy missile, icicle, magic wall, paralyze, poison bomb, soulfire, stone shower, thunderstorm, wild growth, avalanche, antidote, chamaleon, convince creature, destroy field, energy field, energy wall, explosion, fire bomb, fire field, greate fireball, light magic missile, heavy magic missile, intense healing, poison field, poison wall, stalagmite, ultimate healing and sudden death.'})
+keywordHandler:addKeyword({'runes'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'I sell: animate dead, blank rune, desintegrate, energy bomb, fireball, magic wall, paralyze, poison bomb, soulfire, wild growth, antidote, chamaleon, destroy field, energy field, energy wall, explosion, fire bomb, fire field, greate fireball, light magic missile, heavy magic missile, intense healing, poison field, poison wall, envenom, ultimate healing and sudden death.'})
 keywordHandler:addKeyword({'potions'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'I sell: mana fluid and life fluid.'})
 keywordHandler:addKeyword({'wands'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'I sell: wand of vortex, wand of dragonbreath, wand of plague, wand of cosmic energy and wand of inferno..'})
 keywordHandler:addKeyword({'rods'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'I sell: snakebite rod, moonlight rod, volcanic rod, quagmire rod and tempest rod'})

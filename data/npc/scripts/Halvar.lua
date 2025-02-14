@@ -28,6 +28,10 @@ local function creatureSayCallback(cid, type, msg)
 	local player = Player(cid)
 	local arenaId = player:getStorageValue(Storage.SvargrondArena.Arena)
 	if msgcontains(msg, 'fight') or msgcontains(msg, 'pit') or msgcontains(msg, 'challenge') or msgcontains(msg, 'arena') then
+		if player:getStorageValue(Storage.BarbarianTest.Questline) < 8 then
+			npcHandler:say('Only Barbarians may fight in the Arena! Talk to {Sven} and see if he will let you take the Barbarian Test!', cid)
+			return true
+		end
 		if player:getStorageValue(Storage.SvargrondArena.Pit) == 1 then
 			npcHandler:say('You already paid the fee, go and fight!', cid)
 			return true
@@ -46,7 +50,7 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler:say('You\'ve already completed the arena in all {difficulty levels}.', cid)
 			npcHandler.topic[cid] = 0
 		end
-
+		
 	elseif npcHandler.topic[cid] == 1 then
 		if msgcontains(msg, 'yes') then
 			if not ARENA[arenaId] then

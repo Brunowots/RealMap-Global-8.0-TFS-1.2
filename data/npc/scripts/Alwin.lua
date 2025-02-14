@@ -26,5 +26,14 @@ local function creatureSayCallback(cid, type, msg)
 	return true
 end
 
+keywordHandler:addKeyword({'job'}, StdModule.say, {npcHandler = npcHandler, text = "I am a protector of the people of Venore."})
+keywordHandler:addKeyword({'venore'}, StdModule.say, {npcHandler = npcHandler, text = "The harbour is to the north, the weapon market in the south, the general market to the west, and the bank to the east. You will find other shops and the Hard Rock Tavern in the center."})
+keywordHandler:addKeyword({'king'}, StdModule.say, {npcHandler = npcHandler, text = "Tibianus III is our beloved king!"})
+keywordHandler:addKeyword({'tibianus'}, StdModule.say, {npcHandler = npcHandler, text = "Tibianus III is our beloved king!"})
+keywordHandler:addKeyword({'swamp'}, StdModule.say, {npcHandler = npcHandler, text = "The swamp is a dangerous place and full of monsters, not to mention all those swampelves living at shadowthorn, amazons, and swamptrolls."})
+keywordHandler:addKeyword({'monsters'}, StdModule.say, {npcHandler = npcHandler, text = "The swamp is full of nasty snakes and there's a dragon breeding ground somewhere in the swamps."})
+keywordHandler:addKeyword({'amazons'}, StdModule.say, {npcHandler = npcHandler, text = "They are the best example for the results of the Carlin madness."})
+keywordHandler:addKeyword({'swamptroll'}, StdModule.say, {npcHandler = npcHandler, text = "This hideous creatures are even more ugly than the normal trolls. They are treacherous and use several poisons."})
+
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())

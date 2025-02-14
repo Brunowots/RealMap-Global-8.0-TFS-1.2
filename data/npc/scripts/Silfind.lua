@@ -41,12 +41,12 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler:say("Do you have the 4 bear paws I requested?", cid)
 			npcHandler.topic[cid] = 6
 		elseif player:getStorageValue(Storage.TheIceIslands.Questline) == 14 then
-			npcHandler:say("The next things needed are 3 bonelord eyes. Bring them to me and Ill tell you the next ingredients we need.", cid)
+			npcHandler:say("The next things needed are 3 beholder eyes. Bring them to me and Ill tell you the next ingredients we need.", cid)
 			player:setStorageValue(Storage.TheIceIslands.Questline, 15)
 			player:setStorageValue(Storage.TheIceIslands.Mission05, 3) -- Questlog The Ice Islands Quest, Nibelor 4: Berserk Brewery
 			npcHandler.topic[cid] = 0
 		elseif player:getStorageValue(Storage.TheIceIslands.Questline) == 15 then
-			npcHandler:say("Do you have the 3 bonelord eyes I requested?", cid)
+			npcHandler:say("Do you have the 3 beholder eyes I requested?", cid)
 			npcHandler.topic[cid] = 7
 		elseif player:getStorageValue(Storage.TheIceIslands.Questline) == 16 then
 			npcHandler:say("The next things needed are 2 fish fins. Bring them to me and Ill tell you the next ingredients we need.", cid)

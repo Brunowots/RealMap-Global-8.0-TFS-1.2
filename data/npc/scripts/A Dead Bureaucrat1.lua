@@ -83,6 +83,9 @@ end
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye and don't forget me!")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Good bye and don't forget me!")
 
+keywordHandler:addKeyword({'name'}, StdModule.say, {npcHandler = npcHandler, text = "Sorry, I seem to have forgotten it!"})
+keywordHandler:addKeyword({'job'}, StdModule.say, {npcHandler = npcHandler, text = "I'm a bureaucrat who does not even find the time to eat. Just look how bony I am! *SIGH*"})
+
 npcHandler:setCallback(CALLBACK_GREET, greetCallback)
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())

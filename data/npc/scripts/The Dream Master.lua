@@ -16,7 +16,7 @@ local function creatureSayCallback(cid, type, msg)
 	if msgcontains(msg, "join") then
 		if player:getStorageValue(Storage.OutfitQuest.BrotherhoodOutfit) < 1 and player:getStorageValue(Storage.OutfitQuest.NightmareOutfit) < 1 then
 			npcHandler:say({
-				"The Nightmare Knights are almost extinct now, and as far as I know I am the only teacher that is left. But you might beright and its time to accept new disciples ...",
+				"The Nightmare Knights are almost extinct now, and as far as I know I am the only teacher that is left. But you might be right and its time to accept new disciples ...",
 				"After all you have passed the Dream Challenge to reach this place, which used to be the process of initiation in the past...",
 				"So I ask you: do you wish to become a member of the ancient order of the Nightmare Knights, |PLAYERNAME|?"
 			}, cid)
